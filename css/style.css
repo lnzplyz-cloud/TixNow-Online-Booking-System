@@ -1,0 +1,575 @@
+/* General Body Styles */
+body {
+    background-color: #141414; /* Very dark grey, almost black */
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Authentication Page Container */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* The main card for login/register/forgot password */
+.auth-card {
+    background-color: #1f1f1f; /* Dark grey */
+    padding: 2rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Logo styling */
+.auth-card .logo {
+    display: block;
+    margin: 0 auto 2rem;
+    max-width: 180px;
+}
+
+/* Card Title */
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #e50914; /* A vibrant red, reminiscent of popular streaming services */
+    font-weight: bold;
+}
+
+/* Form Input Fields */
+.form-control {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+    background-color: #444;
+    border-color: #e50914;
+    color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(229, 9, 20, 0.25);
+}
+
+/* Form Labels */
+.form-label {
+    color: #aaa;
+}
+
+/* Primary Button (Login, Register) */
+.btn-primary {
+    background-color: #e50914;
+    border-color: #e50914;
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #f6121d;
+    border-color: #f6121d;
+}
+
+/* --- Header Specific Styles --- */
+.header {
+    background-color: #1f1f1f; /* Dark grey for header background */
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.header__logo img {
+    max-height: 50px; /* Adjusted logo size for header */
+    width: auto;
+}
+
+.header__menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.header__menu ul li a {
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 0;
+    display: block;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.header__menu ul li a:hover {
+    color: #e50914;
+}
+
+/* New styles for the combined header options */
+.header__nav__option {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__nav__option a {
+    color: #aaa;
+    margin-left: 15px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.header__nav__option a:hover {
+    color: #e50914;
+}
+
+.header__nav__option .uname-text {
+    color: #fff;
+    margin-left: 15px;
+}
+
+/* User Avatar in Header */
+.header__nav__option .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    border: 2px solid #e50914; /* Accent border */
+}
+
+/* --- Footer Specific Styles --- */
+.footer {
+    background-color: #1f1f1f; /* Dark grey for footer background */
+    padding: 40px 0 20px;
+    color: #aaa;
+    border-top: 1px solid #333;
+}
+
+.footer__about .footer__logo img {
+    max-height: 60px; /* Slightly larger logo for footer */
+    margin-bottom: 15px;
+}
+
+.footer__about p {
+    color: #aaa;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.footer__about img[src*="payment.png"] {
+    max-width: 180px; /* Adjust payment image size */
+    margin-top: 10px;
+}
+
+.footer__widget h6 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer__widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__widget ul li {
+    margin-bottom: 10px;
+}
+
+.footer__widget ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer__widget ul li a:hover {
+    color: #e50914;
+}
+
+.footer__newslatter p {
+    color: #aaa;
+    line-height: 1.8;
+}
+
+.footer__copyright__text {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+.footer__copyright__text p {
+    margin-bottom: 0;
+}
+
+.footer__copyright__text a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+/* --- Vertical Spacing Fix for Main Content --- */
+
+/* Ensures generous padding above and below the main section content */
+/* --- Vertical Spacing Fix for Main Content --- */
+.spad {
+    padding-top: 100px; 
+    padding-bottom: 100px;
+}
+
+/* --- CONTACT PAGE CUSTOM DESIGN --- */
+
+/* 1. Ensure generous top/bottom padding for the contact info section */
+.contact-info-section.spad {
+    padding-top: 100px; 
+    padding-bottom: 50px; /* Reduced padding here because the map follows */
+}
+
+/* 2. Styling the Contact List */
+.contact-list h4 {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-list p {
+    color: #aaa;
+    line-height: 1.8;
+}
+
+/* 3. Styling the Contact Form Container */
+.contact-form-wrapper {
+    background-color: #1f1f1f; /* Dark background matching other elements */
+    border: 1px solid #333; /* Subtle border */
+    border-radius: 10px;
+    height: 100%; /* Ensures alignment with the contact info box */
+}
+
+/* Use existing form-control styles defined in your style.css for inputs */
+
+/* 4. Map Placeholder Styling */
+.contact__map {
+    width: 100%;
+    height: 450px; /* Standard height for a full-width map */
+    margin-top: 50px;
+    background-color: #141414; /* Match body background */
+    overflow: hidden;
+}
+
+.map-placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1200x450/1f1f1f/ffffff?text=Map+Goes+Here');
+    background-size: cover;
+    background-position: center;
+    border-top: 3px solid #e50914; /* Red accent line */
+}
+
+/* Optional: Specific larger padding for pages with minimal content, like contact/feedback */
+.area1 p {
+    text-align: justify;
+}
+/* --- ABOUT PAGE CUSTOM DESIGN --- */
+
+/* 1. Ensure generous top/bottom padding for the whole section (Fixes 'pressed' look) */
+.about-us-section {
+    padding-top: 120px; /* More space from the header */
+    padding-bottom: 120px; /* More space from the footer */
+}
+
+/* 2. Style the main headings for visual hierarchy */
+.section-title-custom {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.welcome-heading-custom {
+    color: #e50914; /* Your accent color */
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 60px; /* Adds space below the welcome line */
+}
+
+/* 3. Style the main content paragraphs (justified and spaced) */
+.about-paragraph-custom {
+    text-align: justify;
+    line-height: 2; /* Increased line height for readability on dark backgrounds */
+    margin-top: 20px;
+}
+
+/* 4. Style the Image and its container */
+.about__image__wrapper {
+    /* Optional: Add a subtle border or box shadow to make the image pop */
+    border: 3px solid #e50914; 
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the image fits the border radius */
+    margin-bottom: 30px; /* Space on small screens */
+}
+
+.about__image__custom {
+    /* Scale the image smoothly within its container */
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+/* Add a subtle hover effect to the image */
+.about__image__wrapper:hover .about__image__custom {
+    transform: scale(1.03);
+}
+
+/* 5. Ensure the column order looks good on mobile (Bootstrap utility classes were added) */
+/* The 'order-1' and 'order-2' classes in the HTML already handle the stacking on mobile */
+/* --- FEEDBACK PAGE CUSTOM DESIGN --- */
+
+/* 1. Ensure generous top/bottom padding (This solves the 'pressed' look) */
+.feedback.spad {
+    padding-top: 100px; 
+    padding-bottom: 100px;
+}
+
+/* 2. Style the main title */
+.feedback-title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* 3. Style the information panel on the right */
+.feedback-info-box {
+    padding: 30px;
+    background-color: #1f1f1f; /* Matches your header/footer background */
+    border-radius: 10px;
+    height: 100%; /* Makes the background fill the column height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feedback-info-box .info-title {
+    color: #e50914; /* Red accent for the info title */
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.feedback-info-box .info-text {
+    color: #aaa;
+    line-height: 1.8;
+}
+
+/* 4. Style Form Inputs */
+.feedback-input {
+    background-color: #333 !important; /* Darker input background */
+    border: none !important;
+    color: #fff !important;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.feedback-input::placeholder {
+    color: #888;
+}
+
+/* 5. Style the Send Message Button */
+.feedback-submit-btn, .feedback-btn-login-prompt {
+    font-size: 18px;
+    padding: 10px 30px;
+    /* Uses your existing .btn-primary style for the red background */
+}
+
+/* 6. Error messages */
+.error-message {
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 18px; /* Prevents layout shift when error appears */
+}
+/* --- ALL MOVIE PAGE CUSTOM DESIGN --- */
+
+/* 1. Overall section spacing (Ensure this is set correctly in your main .spad style) */
+.allmovie-section.spad {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* 2. Styling the Sidebar Filter Wrapper */
+.sidebar-filter-wrapper {
+    background-color: #1f1f1f; /* Dark background matching auth/header/footer */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow on dark theme */
+    border: 1px solid #333;
+}
+
+.filter-title {
+    color: #e50914; /* Red accent for titles */
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+/* 3. Styling the Checkbox Lists */
+.filter-list {
+    border: none !important;
+}
+
+.filter-list .filter-checkbox {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 5px 0;
+}
+
+.filter-list label {
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    display: block;
+    padding-left: 25px; 
+    transition: color 0.2s;
+}
+
+.filter-list label:hover {
+    color: #e50914;
+}
+
+/* Custom Checkbox Appearance (optional, for better dark theme look) */
+.filter-list input[type="checkbox"] {
+    margin-right: 8px;
+    /* Optional: Hide default checkbox and style a custom one */
+}
+
+/* 4. Styling the Price Range Slider (jQuery UI) */
+.price-range-slider {
+    margin-top: 15px;
+}
+.price-range-slider .ui-slider-range {
+    background: #e50914; /* Red color for the active range */
+}
+
+.price-range-slider .ui-slider-handle {
+    border: 2px solid #e50914; /* Red border for handles */
+    background: #fff;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    cursor: grab;
+}
+
+/* 5. Results Area Heading */
+.results-heading {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+/* Styling the loading spinner */
+.filter_data #loading {
+    color: #e50914 !important;
+}
+
+/* Note: You will also need to ensure the HTML structure generated by 'allmovie_fetch.php' uses Bootstrap cards or similar components to display the movies neatly in a grid (e.g., using col-lg-4 inside filter_data). */
+/* --- MOVIE CARD STYLES (Used in allmovie_fetch.php output) --- */
+
+.movie-card-item {
+    background-color: #1f1f1f; /* Dark background matching the theme */
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%; /* Ensures all cards in a row are the same height */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card-item:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+    box-shadow: 0 10px 25px rgba(229, 9, 20, 0.15); /* Subtle red shadow */
+}
+
+.movie-card-body {
+    padding: 15px;
+    flex-grow: 1; /* Allows the body to take up available space */
+}
+
+.movie-card-img-wrapper {
+    position: relative;
+    height: 280px; /* Standardize image height */
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.movie-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+.movie-status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    z-index: 10;
+}
+
+.movie-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Optional: Ensure consistent title space */
+    min-height: 50px; 
+}
+
+.movie-meta-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.movie-meta-list li {
+    padding-top: 3px;
+}
+
+.movie-meta-list strong {
+    color: #fff;
+    font-weight: 600;
+    width: 80px; /* Aligns the data vertically */
+    display: inline-block;
+}
+
+.movie-card-footer {
+    padding: 15px;
+    border-top: 1px solid #333;
+}
